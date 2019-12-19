@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,13 +11,13 @@ body{
     background: #000;
 }
 
-svg{
+svg {
     position: absolute;
     width: 400px;
     fill: none;
 }
 
-svg path{
+svg path {
     d: path("M0, 25 C150,110 150, -60 300,25");
     stroke: #ff3136;
     stroke-width: 50;
@@ -27,17 +27,17 @@ svg path{
 }
 
 @keyframes animate-svg {
-    0%{
+    0% {
         stroke: #ff3136;
         d: path("M0, 25 C150,110 150,-60 300,25");
     }
 
-    50%{
+    50% {
         stroke: #54ff3a;
         d: path("M0, 25 C160,-50 140,110 300,25");
     }
 }
 
-svg:nth-child(2){
+svg:nth-child(2) {
     filter: blur(40px);
 }
