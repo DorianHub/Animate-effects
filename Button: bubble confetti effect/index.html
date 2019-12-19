@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Button: bubble confetti effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<button id="button" class="confetti-button">Click!</button>
+
+<script>
+    let button = document.getElementById("button");
+
+    button.addEventListener('click', (e) => {
+        e.preventDefault;
+        e.target.classList.toggle("animate");
+
+        setTimeout(function () {
+            e.target.classList.remove('animate');
+        }, 700);
+    }, false);
+</script>
+</body>
+</html>
